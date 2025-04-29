@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Keren</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <h1 class="logo">NamaKamu</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero-section">
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/bg-video.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-content">
+    <h2>Halo, Saya <span>NamaKamu</span></h2>
+    <p>Broadcasting Student & Content Creator</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <section id="projects" class="section fade-up">
+    <h3>Projek Terbaru</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="Screenshot 2025-04-11 103617.png" alt="Projek 1" />
+        <div class="card-content">
+          <h4>Pendaki Fomo</h4>
+          <p>Program Verity Show interaktif.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/foto2.jpg" alt="Projek 2" />
+        <div class="card-content">
+          <h4>Film Pendek</h4>
+          <p>Short Film tentang pendakian gunung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section fade-up">
+    <h3>Galeri</h3>
+
+    <div class="filter-buttons">
+      <button class="filter active" data-filter="all">Semua</button>
+      <button class="filter" data-filter="photo">Foto</button>
+      <button class="filter" data-filter="video">Video</button>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="Screenshot 2025-04-11 103617.png" alt="Foto Proyek" data-type="photo" />
+      <img src="images/foto2.jpg" alt="Foto Proyek" data-type="photo" />
+      <video muted data-type="video">
+        <source src="videos/video1.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-up">
+    <h3>Kontak Saya</h3>
+    <p>Email: <a href="mailto:kamu@email.com">kamu@email.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/username" target="_blank">@username</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 NamaKamu. All Rights Reserved.</p>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <div class="lightbox-content">
+    <img id="lightbox-img" />
+    <video id="lightbox-video" controls></video>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
